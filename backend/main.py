@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.database import check_db_connection
+from backend.api import auth as auth_router
+from backend.api import users as users_router
 
 # Create the FastAPI app
 app = FastAPI(
@@ -39,3 +41,6 @@ def health_check():
         "status": "ok",
         "database": "connected" if db_connected else "disconnected"
     }
+
+app.include_router(auth_router.router)
+app.include_router(users_router.router)
