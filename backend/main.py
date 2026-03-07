@@ -4,6 +4,7 @@ from backend.database import check_db_connection
 from backend.api import auth as auth_router
 from backend.api import users as users_router
 from backend.api import transactions as transactions_router
+from backend.api import upload as upload_router
 
 # Create the FastAPI app
 app = FastAPI(
@@ -46,3 +47,4 @@ def health_check():
 app.include_router(auth_router.router)
 app.include_router(users_router.router)
 app.include_router(transactions_router.router)
+app.include_router(upload_router.router)

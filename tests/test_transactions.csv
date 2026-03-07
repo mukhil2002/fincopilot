@@ -1,0 +1,11 @@
+Transaction ID,Date,Time,Type,Name,Emoji,Category,Amount,Currency,Local amount,Local currency,Notes and #tags,Address,Receipt,Description,Category split,Money Out,Money In
+tx_001,07/03/2026,09:15:00,Payment,Tesco Metro,,Groceries,-45.50,GBP,-45.50,GBP,,London,,,,45.50,
+tx_002,06/03/2026,14:22:00,Payment,AWS London,,Software,-120.00,GBP,-120.00,GBP,,,,,,120.00,
+tx_003,05/03/2026,08:45:00,Payment,TfL Travel,,Transport,-3.50,GBP,-3.50,GBP,,London,,,,3.50,
+tx_004,05/03/2026,17:30:00,Payment,Client Payment XYZ Ltd,,Income,5000.00,GBP,5000.00,GBP,,,,,,,5000.00
+tx_005,04/03/2026,12:00:00,Payment,HMRC PAYE,,Tax,-2400.00,GBP,-2400.00,GBP,,,,,,2400.00,
+tx_006,03/03/2026,09:00:00,Payment,Slack,,Software,-7.99,GBP,-7.99,GBP,,,,,,7.99,
+tx_007,02/03/2026,11:30:00,Payment,British Gas,,Utilities,-180.00,GBP,-180.00,GBP,,,,,,180.00,
+tx_008,01/03/2026,16:45:00,Payment,Client Payment ABC Ltd,,Income,3200.00,GBP,3200.00,GBP,,,,,,,3200.00
+tx_009,28/02/2026,10:00:00,Payment,Barclays Bank Fee,,Finance,-25.00,GBP,-25.00,GBP,,,,,,25.00,
+tx_010,27/02/2026,14:00:00,Payment,Tesco Metro,,Groceries,-45.50,GBP,-45.50,GBP,,London,,,,45.50,
