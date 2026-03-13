@@ -1,3 +1,4 @@
+import logging
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.database import check_db_connection
@@ -6,6 +7,13 @@ from backend.api import users as users_router
 from backend.api import transactions as transactions_router
 from backend.api import upload as upload_router
 from backend.api.categorise import router as categorise_router
+from backend.api.summary import router as summary_router
+from backend.api.qa import router as qa_router
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s — %(name)s — %(levelname)s — %(message)s"
+)
 
 # Create the FastAPI app
 app = FastAPI(
@@ -50,3 +58,5 @@ app.include_router(users_router.router)
 app.include_router(transactions_router.router)
 app.include_router(upload_router.router)
 app.include_router(categorise_router)
+app.include_router(summary_router)
+app.include_router(qa_router)
