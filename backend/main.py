@@ -10,6 +10,7 @@ from backend.api.categorise import router as categorise_router
 from backend.api.summary import router as summary_router
 from backend.api.qa import router as qa_router
 from backend.api.anomalies import router as anomalies_router
+from backend.api.forecast import router as forecast_router
 
 logging.basicConfig(
     level=logging.INFO,
@@ -62,3 +63,4 @@ app.include_router(categorise_router)
 app.include_router(summary_router)
 app.include_router(qa_router)
 app.include_router(anomalies_router)
+app.include_router(forecast_router)
