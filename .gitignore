@@ -14,3 +14,8 @@ __pycache__/
 
 # IDE files
 .cursor/
+
+# Frontend
+frontend/node_modules/
+frontend/.env
+frontend/dist/
