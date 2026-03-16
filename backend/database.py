@@ -6,6 +6,7 @@ from sqlalchemy import (
     String,
     Text,
     Numeric,
+    Float,
     Boolean,
     Date,
     DateTime,
@@ -52,10 +53,10 @@ class Transaction(Base):
     upload_id = Column(UUID(as_uuid=True), ForeignKey("uploads.id"), nullable=True)
     txn_date = Column(Date, nullable=False)
     description = Column(Text, nullable=False)
-    amount = Column(Numeric(12, 2), nullable=False)
+    amount = Column(Float, nullable=False)
     currency = Column(String(3), default="GBP")
     category = Column(String(100), nullable=True)
-    confidence = Column(Numeric(4, 3), nullable=True)
+    confidence = Column(Float, nullable=True)
     is_anomaly = Column(Boolean, default=False)
     anomaly_reason = Column(Text, nullable=True)
     manually_corrected = Column(Boolean, default=False)
