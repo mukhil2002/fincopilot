@@ -21,7 +21,7 @@ export default function Dashboard() {
 
   // selectedMonth = "2026-03" format — controls which month KPIs show
   // Default to current month
-  const [selectedMonth] = useState(() => {
+  const [selectedMonth, setSelectedMonth] = useState(() => {
     const now = new Date()
     // Pad month with leading zero: month 3 → "03"
     return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`
@@ -108,12 +108,22 @@ export default function Dashboard() {
 
         {/* Topbar — fixed at top of content area */}
         <Topbar
-          title="Dashboard"
-          selectedMonth={selectedMonthDisplay}
-          onUpload={handleUpload}
-          onExport={handleExport}
-          uploading={uploading}
-        />
+  title="Dashboard"
+  selectedMonth={selectedMonthDisplay}
+  onUpload={handleUpload}
+  onExport={handleExport}
+  uploading={uploading}
+  onPrevMonth={() => {
+    const [y, m] = selectedMonth.split('-').map(Number)
+    const d = new Date(y, m - 2)
+    setSelectedMonth(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`)
+  }}
+  onNextMonth={() => {
+    const [y, m] = selectedMonth.split('-').map(Number)
+    const d = new Date(y, m)
+    setSelectedMonth(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`)
+  }}
+/>
 
         {/* Scrollable page content */}
         <main className="flex-1 overflow-y-auto p-5 space-y-4">

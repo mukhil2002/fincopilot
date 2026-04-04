@@ -10,7 +10,7 @@
 //   onExport      = function called when user clicks Export PDF
 //   uploading     = boolean — true while CSV is being processed
 
-export default function Topbar({ title, selectedMonth, onUpload, onExport, uploading }) {
+export default function Topbar({ title, selectedMonth, onUpload, onExport, uploading,onPrevMonth, onNextMonth }) {
     return (
       <header
         className="bg-white h-14 px-6 flex items-center justify-between flex-shrink-0"
@@ -23,27 +23,30 @@ export default function Topbar({ title, selectedMonth, onUpload, onExport, uploa
           </h1>
   
           {/* Month picker button — visual only for now, full picker in Day 14 */}
-          <button
-            className="flex items-center gap-1.5 text-[11px] font-medium rounded-full px-3 py-1"
-            style={{
-              color: '#2563eb',
-              background: '#eff4ff',
-              border: '1px solid #bfdbfe',
-            }}
-          >
-            {/* Calendar icon — inline SVG */}
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <rect x="1" y="2" width="10" height="9" rx="1.5" />
-              <line x1="1" y1="5" x2="11" y2="5" />
-              <line x1="4" y1="1" x2="4" y2="3" />
-              <line x1="8" y1="1" x2="8" y2="3" />
-            </svg>
-            {selectedMonth}
-            {/* Chevron down */}
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <polyline points="2,3.5 5,6.5 8,3.5" />
-            </svg>
-          </button>
+          <div className="flex items-center gap-1">
+  <button onClick={onPrevMonth} className="p-1 rounded hover:bg-gray-100" style={{ color: '#2563eb' }}>
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2">
+      <polyline points="9,2 4,7 9,12" />
+    </svg>
+  </button>
+  <span
+    className="flex items-center gap-1.5 text-[11px] font-medium rounded-full px-3 py-1"
+    style={{ color: '#2563eb', background: '#eff4ff', border: '1px solid #bfdbfe' }}
+  >
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <rect x="1" y="2" width="10" height="9" rx="1.5" />
+      <line x1="1" y1="5" x2="11" y2="5" />
+      <line x1="4" y1="1" x2="4" y2="3" />
+      <line x1="8" y1="1" x2="8" y2="3" />
+    </svg>
+    {selectedMonth}
+  </span>
+  <button onClick={onNextMonth} className="p-1 rounded hover:bg-gray-100" style={{ color: '#2563eb' }}>
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2">
+      <polyline points="5,2 10,7 5,12" />
+    </svg>
+  </button>
+</div>
         </div>
   
         {/* ── Right side: action buttons ── */}
