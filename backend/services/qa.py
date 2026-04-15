@@ -2,7 +2,7 @@ import asyncio
 import logging
 from datetime import date
 from sqlalchemy.orm import Session
-from anthropic import Anthropic
+from anthropic import APIStatusError, Anthropic
 from backend.config import ANTHROPIC_API_KEY
 from backend.database import Transaction
 
@@ -104,25 +104,26 @@ Answer the question using only the transaction data above.
 # ─────────────────────────────────────────────────────────────────────────
 
 def _call_claude_qa(prompt: str) -> str:
-    """
-    Calls Claude and returns the answer as a string.
-    Same pattern as summary — synchronous, run via asyncio.to_thread().
-    """
-    response = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=500,
-        temperature=0.4,
-        system=(
-            "You are a financial assistant for a UK small business owner. "
-            "Answer questions about their transactions accurately and concisely. "
-            "Only use the transaction data provided. Never invent figures. "
-            "If you cannot answer from the data, say so clearly."
-        ),
-        messages=[
-            {"role": "user", "content": prompt}
-        ]
-    )
-    return response.content[0].text
+    try:
+        response = client.messages.create(
+            model="claude-sonnet-4-20250514",
+            max_tokens=500,
+            temperature=0.4,
+            system=(
+                "You are a financial assistant for a UK small business owner. "
+                "Answer questions about their transactions accurately and concisely. "
+                "Only use the transaction data provided. Never invent figures. "
+                "If you cannot answer from the data, say so clearly."
+            ),
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+        return response.content[0].text
+    except APIStatusError as e:
+        if e.status_code == 529:
+            raise RuntimeError("Claude API is temporarily overloaded. Please try again in a moment.")
+        raise
 
 
 # ── STEP 4 ────────────────────────────────────────────────────────────────
@@ -165,11 +166,15 @@ async def answer_question(
 
     # Build prompt and call Claude
     prompt = _build_qa_prompt(transactions, question)
-    answer = await asyncio.to_thread(_call_claude_qa, prompt)
-
-    logger.info("Q&A answer generated successfully")
-
-    return {
-        "answer": answer,
-        "transaction_count": len(transactions)
-    }
+    try:
+        answer = await asyncio.to_thread(_call_claude_qa, prompt)
+        logger.info("Q&A answer generated successfully")
+        return {
+            "answer": answer,
+            "transaction_count": len(transactions)
+        }
+    except RuntimeError as e:
+        return {
+            "answer": str(e),
+            "transaction_count": len(transactions)
+        }

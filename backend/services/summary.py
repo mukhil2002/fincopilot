@@ -2,7 +2,7 @@ import asyncio
 import logging
 from datetime import date
 from sqlalchemy.orm import Session
-from anthropic import Anthropic
+from anthropic import APIStatusError, Anthropic
 from backend.config import ANTHROPIC_API_KEY
 from backend.database import Transaction
 
@@ -126,24 +126,30 @@ Write a clear, friendly financial summary for this business owner. They have no 
 # ─────────────────────────────────────────────────────────────────────────
 
 def _call_claude_summary(prompt: str) -> str:
-    """
-    Calls Claude synchronously and returns the summary text.
-    Run via asyncio.to_thread() so it doesn't block FastAPI.
-    """
-    response = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=500,
-        temperature=0.4,  # warmer tone for readable English, not robotic
-        system=(
-            "You are a friendly financial advisor speaking to a small business "
-            "owner with no accounting background. Write clear, encouraging, "
-            "plain-English summaries. Be specific with numbers."
-        ),
-        messages=[
-            {"role": "user", "content": prompt}
-        ]
-    )
-    return response.content[0].text
+    try:
+        
+        """
+        Calls Claude synchronously and returns the summary text.
+        Run via asyncio.to_thread() so it doesn't block FastAPI.
+        """
+        response = client.messages.create(
+            model="claude-sonnet-4-20250514",
+            max_tokens=500,
+            temperature=0.4,  # warmer tone for readable English, not robotic
+            system=(
+                "You are a friendly financial advisor speaking to a small business "
+                "owner with no accounting background. Write clear, encouraging, "
+                "plain-English summaries. Be specific with numbers."
+            ),
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+        return response.content[0].text
+    except APIStatusError as e:
+        if e.status_code == 529:
+            raise RuntimeError("Claude API is temporarily overloaded. Please try again in a moment.")
+        raise
 
 
 # ── STEP 4 ────────────────────────────────────────────────────────────────
@@ -183,11 +189,17 @@ async def generate_summary(
 
     # Step 3: Call Claude in a background thread
     logger.info(f"Calling Claude for summary — {summary_data['transaction_count']} transactions")
-    summary_text = await asyncio.to_thread(_call_claude_summary, prompt)
+    
+    try:
+        summary_text = await asyncio.to_thread(_call_claude_summary, prompt)
+        logger.info("Summary generated successfully")
+        return {
+            "summary": summary_text,
+            "data": summary_data
+        }
 
-    logger.info("Summary generated successfully")
-
-    return {
-        "summary": summary_text,
-        "data": summary_data
-    }
+    except RuntimeError as e:
+        return {
+            "summary": str(e),  # ← the overload message
+            "data": summary_data
+        }

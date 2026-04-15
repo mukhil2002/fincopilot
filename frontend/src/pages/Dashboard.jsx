@@ -5,6 +5,8 @@ import Topbar from '../components/layout/Topbar'
 import KPIRow from '../components/dashboard/KPIRow'
 import { TransactionPanel } from '../components/dashboard/TransactionPanel'
 import api from '../lib/api'
+import SummaryCard from '../components/dashboard/SummaryCard'
+import QAChat from '../components/dashboard/QAChat'
 
 export default function Dashboard() {
 
@@ -157,32 +159,14 @@ export default function Dashboard() {
               refreshKey={refreshKey}
             />
 
-            {/* Right: Summary + QA Chat — built Day 13 */}
-            <div className="flex flex-col gap-3">
-              <div
-                className="bg-white rounded-[14px] flex items-center justify-center"
-                style={{
-                  height: 160,
-                  border: '2px dashed #e8ecf4',
-                  color: '#9ca3af',
-                  fontSize: 12,
-                }}
-              >
-                Summary — Day 13
-              </div>
-              <div
-                className="bg-white rounded-[14px] flex items-center justify-center"
-                style={{
-                  height: 200,
-                  border: '2px dashed #e8ecf4',
-                  color: '#9ca3af',
-                  fontSize: 12,
-                }}
-              >
-                Q&amp;A Chat — Day 13
-              </div>
-            </div>
-
+            {/* Right: Summary + QA Chat */}
+<div className="flex flex-col gap-3">
+  <SummaryCard
+    selectedMonth={selectedMonth}
+    refreshKey={refreshKey}
+  />
+  <QAChat selectedMonth={selectedMonth} />
+</div>
           </div>
 
         </main>
