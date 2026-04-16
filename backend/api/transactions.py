@@ -4,7 +4,7 @@ from sqlalchemy import func
 import math
 from datetime import date
 
-from backend.database import get_db, Transaction
+from backend.database import get_db, Transaction, Correction
 from backend.auth import get_current_user
 from backend.models.transaction import TransactionResponse, TransactionListResponse
 
@@ -106,3 +106,51 @@ async def delete_transaction(
     db.commit()
 
     return None
+
+
+@router.patch("/{transaction_id}/category", response_model=TransactionResponse)
+async def update_transaction_category(
+    transaction_id: int,
+    payload: dict,
+    db: Session = Depends(get_db),
+    current_user: dict = Depends(get_current_user),
+):
+    user_id = current_user["id"]
+
+    transaction = db.query(Transaction).filter(
+        Transaction.id == transaction_id,
+        Transaction.user_id == str(user_id),
+    ).first()
+
+    if not transaction:
+        raise HTTPException(status_code=404, detail="Transaction not found")
+
+    new_category = payload.get("category")
+    if not new_category:
+        raise HTTPException(status_code=400, detail="category is required")
+
+    transaction.category = new_category
+    transaction.confidence = 1.0
+    transaction.manually_corrected = True
+
+    description_pattern = transaction.description.split()[0] if transaction.description else transaction.description
+
+    existing = db.query(Correction).filter(
+        Correction.user_id == str(user_id),
+        Correction.description_pattern == description_pattern,
+    ).first()
+
+    if existing:
+        existing.correct_category = new_category
+    else:
+        new_correction = Correction(
+            user_id=str(user_id),
+            description_pattern=description_pattern,
+            correct_category=new_category,
+        )
+        db.add(new_correction)
+
+    db.commit()
+    db.refresh(transaction)
+
+    return transaction

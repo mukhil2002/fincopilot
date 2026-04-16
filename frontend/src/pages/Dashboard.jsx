@@ -7,6 +7,7 @@ import { TransactionPanel } from '../components/dashboard/TransactionPanel'
 import api from '../lib/api'
 import SummaryCard from '../components/dashboard/SummaryCard'
 import QAChat from '../components/dashboard/QAChat'
+import ForecastChart from '../components/dashboard/ForecastChart'
 
 export default function Dashboard() {
 
@@ -167,6 +168,8 @@ export default function Dashboard() {
   />
   <QAChat selectedMonth={selectedMonth} />
 </div>
+
+<ForecastChart />
           </div>
 
         </main>

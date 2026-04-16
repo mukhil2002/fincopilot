@@ -217,13 +217,13 @@ export default function Sidebar() {
           <NavItem
             icon={<ListIcon />}
             label="Transactions"
-            to="/transactions"
+            to="/dashboard"
             active={location.pathname === '/transactions'}
           />
           <NavItem
             icon={<TrendIcon />}
             label="Forecast"
-            to="/forecast"
+            to="/dashboard"
             active={location.pathname === '/forecast'}
           />
           <NavItem

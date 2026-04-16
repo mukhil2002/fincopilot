@@ -12,6 +12,7 @@
 
 import { useEffect, useRef } from 'react'
 import { BADGE_STYLES } from './CategoryBadge'
+import api from '../../lib/api'
 
 // Import the same 14 categories your backend uses
 // This is the single source of truth — never hardcode the list again
@@ -93,12 +94,17 @@ export function CategoryDropdown({ txn, position, onSelect, onClose }) {
     // This is the "optimistic" part — badge changes before API responds
     onSelect(txn.id, category)
 
-    // Step 3: Save to backend
-    // Stubbed for Day 14 — just a comment for now
-    // On Day 14 replace this with:
-    // await api.patch(`/transactions/${txn.id}/category`, { category })
-    // The backend will also save to the corrections table automatically
-    console.log(`Day 14: PATCH /api/transactions/${txn.id}/category →`, category)
+// Step 3: Save to backend
+// API call goes to the PATCH endpoint we built in Step 1
+// Backend updates the transaction AND saves to corrections table
+try {
+  await api.patch(`/transactions/${txn.id}/category`, { category })
+} catch (err) {
+  // If the API call fails, tell the parent to revert the badge
+  // back to the original category — undo the optimistic update
+  console.error('Failed to save correction:', err)
+  onSelect(txn.id, txn.category)
+}
   }
 
   // ── Render ────────────────────────────────────────────────────
