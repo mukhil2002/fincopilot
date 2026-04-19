@@ -59,22 +59,6 @@ export default function Dashboard() {
     }
   }
 
-  // ── Export handler (Day 15) ───────────────────────────────────
-  async function handleExport() {
-    try {
-      const response = await api.get('/report/pdf', { responseType: 'blob' })
-      const url = window.URL.createObjectURL(new Blob([response.data]))
-      const link = document.createElement('a')
-      link.href = url
-      link.setAttribute('download', `fincopilot-${selectedMonth}.pdf`)
-      document.body.appendChild(link)
-      link.click()
-      link.remove()
-    } catch {
-      alert('PDF export coming on Day 15')
-    }
-  }
-
   // ── Render ────────────────────────────────────────────────────
   return (
     <AppShell>
@@ -85,7 +69,6 @@ export default function Dashboard() {
           title="Dashboard"
           selectedMonth={selectedMonthDisplay}
           onUpload={handleUpload}
-          onExport={handleExport}
           uploading={uploading}
           onPrevMonth={() => {
             const [y, m] = selectedMonth.split('-').map(Number)
