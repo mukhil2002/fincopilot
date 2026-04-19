@@ -39,3 +39,4 @@ uvicorn==0.41.0
 numpy==2.4.2
 scikit-learn==1.8.0
 scipy==1.17.1
+reportlab==4.4.10
