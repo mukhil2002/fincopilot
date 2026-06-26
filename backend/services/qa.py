@@ -106,7 +106,7 @@ Answer the question using only the transaction data above.
 def _call_claude_qa(prompt: str) -> str:
     try:
         response = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             max_tokens=500,
             temperature=0.4,
             system=(

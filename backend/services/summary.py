@@ -133,7 +133,7 @@ def _call_claude_summary(prompt: str) -> str:
         Run via asyncio.to_thread() so it doesn't block FastAPI.
         """
         response = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             max_tokens=500,
             temperature=0.4,  # warmer tone for readable English, not robotic
             system=(

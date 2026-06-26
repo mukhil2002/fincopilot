@@ -110,7 +110,7 @@ def _call_claude(batch_with_ids: list[dict]) -> list[dict]:
     On any failure, returns empty list (caller handles fallback).
     """
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=1000,
         temperature=0.1,
         system="You are a professional UK bookkeeper. Return only valid JSON arrays.",

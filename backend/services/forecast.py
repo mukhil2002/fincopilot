@@ -159,7 +159,7 @@ Write a short 3-4 sentence narrative for this forecast.
 def _call_claude_forecast(prompt: str) -> str:
 
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=400,
         temperature=0.3,
         system=(
