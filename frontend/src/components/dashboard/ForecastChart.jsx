@@ -116,35 +116,61 @@ export default function ForecastChart() {
     )
   }
 
-  // ── Combine historical + projected into one array for Recharts ──
-  // Recharts needs a single flat array to draw the chart
-  // We mark projected rows with isProjected: true
-  // This lets us use different line styles for each
-  // Get the last historical point
-const lastHistorical = data.historical[data.historical.length - 1]
+// ── Guard: empty state for new users with no data ──────────────
+  // If historical is empty, data.historical[-1] = undefined in JS.
+  // Accessing undefined.month crashes the whole page.
+  // We catch it here and show a friendly message instead.
+  if (!data.historical || data.historical.length === 0) {
+    return (
+      <div
+        className="bg-white rounded-[14px] p-5 flex flex-col items-center justify-center"
+        style={{ border: '1px solid #e8ecf4', minHeight: 200 }}
+      >
+        <div
+          className="w-12 h-12 rounded-2xl flex items-center justify-center mb-3"
+          style={{ background: '#eff4ff' }}
+        >
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"
+               stroke="#60a5fa" strokeWidth="1.8">
+            <path strokeLinecap="round" strokeLinejoin="round"
+              d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+          </svg>
+        </div>
+        <p className="text-[13px] font-semibold mb-1" style={{ color: '#0f1c3f' }}>
+          No forecast yet
+        </p>
+        <p className="text-[12px] leading-relaxed text-center"
+           style={{ color: '#9ca3af', maxWidth: 220 }}>
+          Upload at least one month of transactions to generate your cash flow forecast
+        </p>
+      </div>
+    )
+  }
 
-const chartData = [
-  ...data.historical.map(d => ({
-    month: formatMonth(d.month),
-    Revenue: d.revenue,
-    Expenses: Math.abs(d.expenses),
-    Profit: d.profit,
-  })),
-  // Repeat the last historical point as first projected point
-  // This creates a visual connection between solid and dashed lines
-  {
-    month: formatMonth(lastHistorical.month),
-    'Revenue (proj)': lastHistorical.revenue,
-    'Expenses (proj)': Math.abs(lastHistorical.expenses),
-    'Profit (proj)': lastHistorical.profit,
-  },
-  ...data.projected.map(d => ({
-    month: formatMonth(d.month),
-    'Revenue (proj)': d.revenue,
-    'Expenses (proj)': Math.abs(d.expenses),
-    'Profit (proj)': d.profit,
-  })),
-]
+  // ── Combine historical + projected into one array for Recharts ──
+  // Only reaches here if historical data exists
+  const lastHistorical = data.historical[data.historical.length - 1]
+
+  const chartData = [
+    ...data.historical.map(d => ({
+      month: formatMonth(d.month),
+      Revenue: d.revenue,
+      Expenses: Math.abs(d.expenses),
+      Profit: d.profit,
+    })),
+    {
+      month: formatMonth(lastHistorical.month),
+      'Revenue (proj)': lastHistorical.revenue,
+      'Expenses (proj)': Math.abs(lastHistorical.expenses),
+      'Profit (proj)': lastHistorical.profit,
+    },
+    ...data.projected.map(d => ({
+      month: formatMonth(d.month),
+      'Revenue (proj)': d.revenue,
+      'Expenses (proj)': Math.abs(d.expenses),
+      'Profit (proj)': d.profit,
+    })),
+  ]
 
   return (
     <div
