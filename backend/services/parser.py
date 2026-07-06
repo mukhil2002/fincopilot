@@ -62,7 +62,7 @@ def detect_encoding(file_bytes: bytes) -> str:
 # ────────────────────────────────────────────────────────────────────────
 
 # All known column name variants across UK banks
-DATE_COLUMNS = ["date", "transaction date", "value date", "posted date"]
+DATE_COLUMNS = ["date", "transaction date", "value date", "posted date", "completed date"]
 
 DESCRIPTION_COLUMNS = [
     "name", "description", "memo", "payee",
@@ -146,6 +146,7 @@ def clean_amount(value) -> Optional[float]:
 # ────────────────────────────────────────────────────────────────────────
 
 DATE_FORMATS = [
+    "%Y-%m-%d %H:%M:%S",
     "%d/%m/%Y",    # 07/03/2026  ← most UK banks
     "%d-%m-%Y",    # 07-03-2026
     "%Y-%m-%d",    # 2026-03-07  ← already normalised
@@ -247,10 +248,27 @@ def parse_csv(file_bytes: bytes) -> dict:
         raise ValueError(
             f"Could not find an amount column. Columns found: {list(df.columns)}"
         )
+
     
     # Step 5 — Process each row
     transactions = []
     skipped_rows = 0
+
+    # Filter out non-completed transactions (Revolut-specific)
+    # Revolut CSVs include PENDING and REVERTED rows.
+    # PENDING = not yet settled, amount may change.
+    # REVERTED = cancelled transaction, should not be counted.
+    # We filter the entire DataFrame before the loop so the loop
+    # only ever sees clean, settled transactions.
+    if 'State' in df.columns:
+        original_count = len(df)
+        df = df[df['State'] == 'COMPLETED'] 
+        filtered_count = original_count - len(df)
+        if filtered_count > 0:
+            skipped_rows += filtered_count  # count these as skipped
+
+
+    
     
     for index, row in df.iterrows():
         # Clean each field
