@@ -229,7 +229,7 @@ export default function Sidebar() {
           <NavItem
             icon={<DocIcon />}
             label="Reports"
-            to="/reports"
+            to="/dashboard"
             active={location.pathname === '/reports'}
           />
         </SidebarSection>
@@ -238,13 +238,13 @@ export default function Sidebar() {
           <NavItem
             icon={<QuestionIcon />}
             label="Ask AI"
-            to="/ask"
+            to="/dashboard"
             active={location.pathname === '/ask'}
           />
           <NavItem
             icon={<StarIcon />}
             label="Anomalies"
-            to="/anomalies"
+            to="/dashboard"
             active={location.pathname === '/anomalies'}
             badgeVariant="red"
           />
