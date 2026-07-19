@@ -1,0 +1,301 @@
+dataset,id,description,amount,true_category,rule_prediction,rule_correct,claude_prediction,claude_confidence,claude_correct
+Dataset 1 — Clean Business,1,CLIENT PAYMENT REF 441,4500.0,Revenue,Revenue,True,Revenue,0.97,True
+Dataset 1 — Clean Business,2,CLIENT PAYMENT REF 442,3200.0,Revenue,Revenue,True,Revenue,0.97,True
+Dataset 1 — Clean Business,3,CLIENT RETAINER ACME LTD,2800.0,Revenue,Other,False,Revenue,0.97,True
+Dataset 1 — Clean Business,4,CLIENT PAYMENT REF 443,5000.0,Revenue,Revenue,True,Revenue,0.95,True
+Dataset 1 — Clean Business,5,BACS RECEIPT BETA SOLUTIONS,1800.0,Revenue,Revenue,True,Revenue,0.92,True
+Dataset 1 — Clean Business,6,CLIENT PAYMENT REF 444,3600.0,Revenue,Revenue,True,Revenue,0.97,True
+Dataset 1 — Clean Business,7,INVOICE PAYMENT GAMMA CORP,2200.0,Revenue,Revenue,True,Revenue,0.72,True
+Dataset 1 — Clean Business,8,CLIENT RETAINER DELTA INC,4000.0,Revenue,Other,False,Revenue,0.97,True
+Dataset 1 — Clean Business,9,BACS RECEIPT EPSILON LTD,1500.0,Revenue,Revenue,True,Revenue,0.92,True
+Dataset 1 — Clean Business,10,CLIENT PAYMENT REF 445,6000.0,Revenue,Revenue,True,Revenue,0.95,True
+Dataset 1 — Clean Business,11,SALARY TRANSFER JANE DOE,-2800.0,Payroll,Other,False,Payroll,0.99,True
+Dataset 1 — Clean Business,12,SALARY TRANSFER JOHN SMITH,-2400.0,Payroll,Other,False,Payroll,0.99,True
+Dataset 1 — Clean Business,13,HMRC PAYE MARCH,-1200.0,Payroll,Payroll,True,Payroll,0.97,True
+Dataset 1 — Clean Business,14,BACS SALARY JAMES WILSON,-3000.0,Payroll,Payroll,True,Payroll,0.99,True
+Dataset 1 — Clean Business,15,STAFF WAGES APRIL,-2600.0,Payroll,Payroll,True,Payroll,0.99,True
+Dataset 1 — Clean Business,16,HMRC VAT Q1 2026,-2100.0,VAT Payment,VAT Payment,True,VAT Payment,0.99,True
+Dataset 1 — Clean Business,17,HMRC VAT Q4 2025,-1950.0,VAT Payment,VAT Payment,True,VAT Payment,0.99,True
+Dataset 1 — Clean Business,18,VAT PAYMENT MARCH 2026,-2400.0,VAT Payment,VAT Payment,True,VAT Payment,0.99,True
+Dataset 1 — Clean Business,19,ADOBE CREATIVE CLOUD,-54.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,20,SLACK TECHNOLOGIES,-15.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,21,ZOOM VIDEO COMMUNICATIONS,-15.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,22,GOOGLE WORKSPACE,-28.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,23,MICROSOFT OFFICE 365,-12.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,24,DROPBOX BUSINESS,-16.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,25,GITHUB SUBSCRIPTION,-9.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,26,NOTION SO,-10.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,27,XERO ACCOUNTING,-35.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,28,SHOPIFY MONTHLY,-29.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,29,TESCO METRO LONDON,-45.5,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 1 — Clean Business,30,SAINSBURYS SUPERSTORE,-67.8,Supplies,Supplies,True,Supplies,0.6,True
+Dataset 1 — Clean Business,31,AMAZON MARKETPLACE,-89.99,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 1 — Clean Business,32,STAPLES OFFICE SUPPLIES,-127.5,Supplies,Supplies,True,Supplies,0.97,True
+Dataset 1 — Clean Business,33,RYMAN STATIONERY,-34.2,Supplies,Supplies,True,Supplies,0.97,True
+Dataset 1 — Clean Business,34,IKEA BUSINESS,-245.0,Supplies,Supplies,True,Supplies,0.82,True
+Dataset 1 — Clean Business,35,SCREWFIX DIRECT,-78.4,Supplies,Supplies,True,Supplies,0.92,True
+Dataset 1 — Clean Business,36,WH SMITH,-22.5,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 1 — Clean Business,37,BRITISH GAS BUSINESS,-143.0,Utilities,Utilities,True,Utilities,0.99,True
+Dataset 1 — Clean Business,38,EDF ENERGY,-98.0,Utilities,Utilities,True,Utilities,0.99,True
+Dataset 1 — Clean Business,39,BT BUSINESS BROADBAND,-67.0,Utilities,Utilities,True,Utilities,0.97,True
+Dataset 1 — Clean Business,40,VODAFONE BUSINESS,-55.0,Utilities,Utilities,True,Utilities,0.85,True
+Dataset 1 — Clean Business,41,THAMES WATER,-45.0,Utilities,Utilities,True,Utilities,0.98,True
+Dataset 1 — Clean Business,42,SKY BROADBAND BUSINESS,-49.99,Utilities,Utilities,True,Utilities,0.92,True
+Dataset 1 — Clean Business,43,UBER BUSINESS TRAVEL,-28.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.97,True
+Dataset 1 — Clean Business,44,TRAINLINE,-56.5,Travel & Transport,Travel & Transport,True,Travel & Transport,0.97,True
+Dataset 1 — Clean Business,45,TRANSPORT FOR LONDON,-34.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.97,True
+Dataset 1 — Clean Business,46,NATIONAL RAIL,-89.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.95,True
+Dataset 1 — Clean Business,47,PREMIER INN,-120.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.95,True
+Dataset 1 — Clean Business,48,EASYJET,-145.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.95,True
+Dataset 1 — Clean Business,49,ENTERPRISE RENT A CAR,-210.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.95,True
+Dataset 1 — Clean Business,50,GOOGLE ADS,-250.0,Marketing & Advertising,Marketing & Advertising,True,Marketing & Advertising,0.99,True
+Dataset 1 — Clean Business,51,FACEBOOK ADS ACCOUNT,-180.0,Marketing & Advertising,Marketing & Advertising,True,Marketing & Advertising,0.99,True
+Dataset 1 — Clean Business,52,LINKEDIN ADS,-320.0,Marketing & Advertising,Marketing & Advertising,True,Marketing & Advertising,0.99,True
+Dataset 1 — Clean Business,53,MAILCHIMP MONTHLY,-45.0,Marketing & Advertising,Software & Subscriptions,False,Marketing & Advertising,0.97,True
+Dataset 1 — Clean Business,54,HOOTSUITE PLAN,-49.0,Marketing & Advertising,Software & Subscriptions,False,Software & Subscriptions,0.98,False
+Dataset 1 — Clean Business,55,BARCLAYS BANK CHARGE,-8.0,Bank Charges,Bank Charges,True,Bank Charges,0.99,True
+Dataset 1 — Clean Business,56,BARCLAYS MONTHLY FEE,-8.0,Bank Charges,Bank Charges,True,Bank Charges,0.99,True
+Dataset 1 — Clean Business,57,ACCOUNT SERVICE FEE,-12.5,Bank Charges,Other,False,Bank Charges,0.95,True
+Dataset 1 — Clean Business,58,OVERDRAFT FEE JULY,-25.0,Bank Charges,Bank Charges,True,Bank Charges,0.97,True
+Dataset 1 — Clean Business,59,COMPANIES HOUSE FILING,-13.0,Professional Fees,Professional Fees,True,Professional Fees,0.82,True
+Dataset 1 — Clean Business,60,FIVERR MARKETPLACE,-150.0,Professional Fees,Professional Fees,True,Marketing & Advertising,0.82,False
+Dataset 1 — Clean Business,61,UPWORK FREELANCER,-380.0,Professional Fees,Professional Fees,True,Professional Fees,0.92,True
+Dataset 1 — Clean Business,62,LEGAL FEES CARTER LLP,-500.0,Professional Fees,Professional Fees,True,Professional Fees,0.98,True
+Dataset 1 — Clean Business,63,ACCOUNTANT FEES ANNUAL,-750.0,Professional Fees,Professional Fees,True,Professional Fees,0.99,True
+Dataset 1 — Clean Business,64,ROYAL MAIL POSTAGE,-34.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.85,True
+Dataset 1 — Clean Business,65,DHL COURIER SERVICE,-28.5,Operating Expenses,Operating Expenses,True,Operating Expenses,0.82,True
+Dataset 1 — Clean Business,66,SIMPLY BUSINESS INSURANCE,-89.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.95,True
+Dataset 1 — Clean Business,67,OFFICE RENT MARCH,-1200.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.97,True
+Dataset 1 — Clean Business,68,CLEANING SERVICES,-150.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.92,True
+Dataset 1 — Clean Business,69,FASTER PAYMENT TO SUPPLIER,-500.0,Transfers,Transfers,True,Supplies,0.52,False
+Dataset 1 — Clean Business,70,BACS TRANSFER SAVINGS,-1000.0,Transfers,Transfers,True,Transfers,0.92,True
+Dataset 1 — Clean Business,71,INTERNAL TRANSFER ACC2,-2000.0,Transfers,Transfers,True,Transfers,0.97,True
+Dataset 1 — Clean Business,72,TRANSFER TO PAYROLL ACC,-5000.0,Transfers,Payroll,False,Transfers,0.95,True
+Dataset 1 — Clean Business,73,ATM WITHDRAWAL LONDON,-200.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.82,True
+Dataset 1 — Clean Business,74,CASH MACHINE BARCLAYS,-150.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.72,True
+Dataset 1 — Clean Business,75,DIRECTOR DRAWINGS MARCH,-1500.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.99,True
+Dataset 1 — Clean Business,76,DIVIDEND PAYMENT Q1,-2000.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.92,True
+Dataset 1 — Clean Business,77,CLIENT PAYMENT REF 446,2500.0,Revenue,Revenue,True,Revenue,0.95,True
+Dataset 1 — Clean Business,78,BACS RECEIPT ZETA CORP,3100.0,Revenue,Revenue,True,Revenue,0.95,True
+Dataset 1 — Clean Business,79,INVOICE PAYMENT ETA LTD,1900.0,Revenue,Revenue,True,Professional Fees,0.72,False
+Dataset 1 — Clean Business,80,CLIENT RETAINER THETA CO,4200.0,Revenue,Other,False,Revenue,0.97,True
+Dataset 1 — Clean Business,81,SALARY TRANSFER SARAH JONES,-2200.0,Payroll,Other,False,Payroll,0.99,True
+Dataset 1 — Clean Business,82,HMRC PAYE APRIL,-1100.0,Payroll,Payroll,True,Payroll,0.95,True
+Dataset 1 — Clean Business,83,ADOBE STOCK,-29.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.92,True
+Dataset 1 — Clean Business,84,ASANA PROJECT MANAGEMENT,-24.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 1 — Clean Business,85,LIDL GB,-34.5,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 1 — Clean Business,86,ALDI STORES,-28.9,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 1 — Clean Business,87,AMAZON BUSINESS SUPPLIES,-156.0,Supplies,Supplies,True,Supplies,0.92,True
+Dataset 1 — Clean Business,88,VIRGIN MEDIA BUSINESS,-59.99,Utilities,Utilities,True,Utilities,0.92,True
+Dataset 1 — Clean Business,89,O2 BUSINESS MOBILE,-45.0,Utilities,Other,False,Utilities,0.92,True
+Dataset 1 — Clean Business,90,UBER BUSINESS,-34.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.97,True
+Dataset 1 — Clean Business,91,AVANTI WEST COAST,-112.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.95,True
+Dataset 1 — Clean Business,92,GOOGLE ADS CAMPAIGN,-175.0,Marketing & Advertising,Marketing & Advertising,True,Marketing & Advertising,0.99,True
+Dataset 1 — Clean Business,93,META BUSINESS ADS,-220.0,Marketing & Advertising,Other,False,Marketing & Advertising,0.99,True
+Dataset 1 — Clean Business,94,HSBC BANK CHARGE,-8.0,Bank Charges,Bank Charges,True,Bank Charges,0.99,True
+Dataset 1 — Clean Business,95,EVRI COURIER,-12.5,Operating Expenses,Operating Expenses,True,Operating Expenses,0.82,True
+Dataset 1 — Clean Business,96,PARCELFORCE,-18.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.82,True
+Dataset 1 — Clean Business,97,HISCOX INSURANCE,-110.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.95,True
+Dataset 1 — Clean Business,98,BACS TRANSFER TO RESERVE,-3000.0,Transfers,Transfers,True,Transfers,0.95,True
+Dataset 1 — Clean Business,99,ATM NW LONDON,-100.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.82,True
+Dataset 1 — Clean Business,100,CLIENT PAYMENT REF 447,2800.0,Revenue,Revenue,True,Revenue,0.97,True
+Dataset 2 — Ambiguous,1,AMAZON,-34.99,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 2 — Ambiguous,2,AMAZON,-89.0,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 2 — Ambiguous,3,AMAZON,-299.0,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 2 — Ambiguous,4,JOHN SMITH,-500.0,Professional Fees,Other,False,Personal / Drawings,0.72,False
+Dataset 2 — Ambiguous,5,JOHN SMITH,-1200.0,Professional Fees,Other,False,Payroll,0.6,False
+Dataset 2 — Ambiguous,6,SARAH JONES,-350.0,Professional Fees,Other,False,Payroll,0.72,False
+Dataset 2 — Ambiguous,7,SUMUP *COFFEE SHOP,-12.5,Supplies,Other,False,Travel & Transport,0.55,False
+Dataset 2 — Ambiguous,8,SUMUP *HAIR SALON,-45.0,Operating Expenses,Other,False,Personal / Drawings,0.82,False
+Dataset 2 — Ambiguous,9,SUMUP *PLUMBER,-180.0,Operating Expenses,Other,False,Operating Expenses,0.82,True
+Dataset 2 — Ambiguous,10,PAYPAL *SUPPLIES,-67.0,Supplies,Other,False,Supplies,0.85,True
+Dataset 2 — Ambiguous,11,PAYPAL *SOFTWARE,-29.99,Software & Subscriptions,Other,False,Software & Subscriptions,0.91,True
+Dataset 2 — Ambiguous,12,PAYPAL *CONSULTANT,-450.0,Professional Fees,Other,False,Professional Fees,0.82,True
+Dataset 2 — Ambiguous,13,STRIPE PAYMENT,-89.0,Supplies,Other,False,Bank Charges,0.72,False
+Dataset 2 — Ambiguous,14,GOFARDLESS *SUBSCRIPTION,-45.0,Software & Subscriptions,Other,False,Software & Subscriptions,0.85,True
+Dataset 2 — Ambiguous,15,REF 884721,2000.0,Revenue,Other,False,Other,0.4,False
+Dataset 2 — Ambiguous,16,REF 992341,500.0,Revenue,Other,False,Other,0.4,False
+Dataset 2 — Ambiguous,17,BACS 334421,1500.0,Revenue,Other,False,Transfers,0.4,False
+Dataset 2 — Ambiguous,18,TFR FROM JAMES,-800.0,Transfers,Transfers,True,Transfers,0.82,True
+Dataset 2 — Ambiguous,19,TFR TO SARAH,-600.0,Transfers,Transfers,True,Personal / Drawings,0.82,False
+Dataset 2 — Ambiguous,20,REVOLUT *PAYMENT,-200.0,Transfers,Other,False,Transfers,0.7,True
+Dataset 2 — Ambiguous,21,DELIVEROO,-45.0,Operating Expenses,Other,False,Operating Expenses,0.72,True
+Dataset 2 — Ambiguous,22,DELIVEROO FOR BUSINESS,-67.0,Operating Expenses,Other,False,Operating Expenses,0.82,True
+Dataset 2 — Ambiguous,23,UBER EATS,-34.0,Operating Expenses,Travel & Transport,False,Travel & Transport,0.55,False
+Dataset 2 — Ambiguous,24,JUST EAT,-28.0,Operating Expenses,Other,False,Operating Expenses,0.72,True
+Dataset 2 — Ambiguous,25,APPLE.COM/BILL,-9.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.93,True
+Dataset 2 — Ambiguous,26,APPLE.COM/BILL,-14.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.93,True
+Dataset 2 — Ambiguous,27,GOOGLE *SERVICES,-12.0,Software & Subscriptions,Other,False,Software & Subscriptions,0.85,True
+Dataset 2 — Ambiguous,28,GOOGLE *STORAGE,-2.99,Software & Subscriptions,Other,False,Software & Subscriptions,0.97,True
+Dataset 2 — Ambiguous,29,FACEBOOK,-50.0,Marketing & Advertising,Other,False,Marketing & Advertising,0.97,True
+Dataset 2 — Ambiguous,30,FACEBOOK,-200.0,Marketing & Advertising,Other,False,Marketing & Advertising,0.97,True
+Dataset 2 — Ambiguous,31,LINKEDIN,-39.99,Software & Subscriptions,Other,False,Marketing & Advertising,0.92,False
+Dataset 2 — Ambiguous,32,LINKEDIN,-500.0,Marketing & Advertising,Other,False,Marketing & Advertising,0.95,True
+Dataset 2 — Ambiguous,33,MIKE JOHNSON,-750.0,Professional Fees,Other,False,Personal / Drawings,0.72,False
+Dataset 2 — Ambiguous,34,EMMA WILLIAMS,-400.0,Professional Fees,Other,False,Payroll,0.72,False
+Dataset 2 — Ambiguous,35,D PATEL,-1000.0,Payroll,Other,False,Personal / Drawings,0.72,False
+Dataset 2 — Ambiguous,36,A KUMAR,-850.0,Payroll,Other,False,Personal / Drawings,0.72,False
+Dataset 2 — Ambiguous,37,UNKNOWN MERCHANT 2847,-1200.0,Other,Other,True,Other,0.4,True
+Dataset 2 — Ambiguous,38,UNKNOWN REF 4421,-450.0,Other,Other,True,Other,0.4,True
+Dataset 2 — Ambiguous,39,POS PAYMENT 334,-67.0,Supplies,Other,False,Other,0.4,False
+Dataset 2 — Ambiguous,40,CARD PAYMENT 119,-34.0,Supplies,Other,False,Other,0.4,False
+Dataset 2 — Ambiguous,41,MONZO,-3.63,Transfers,Other,False,Bank Charges,0.6,False
+Dataset 2 — Ambiguous,42,STARLING BANK,-50.0,Transfers,Other,False,Bank Charges,0.72,False
+Dataset 2 — Ambiguous,43,BARCLAYS,-200.0,Transfers,Other,False,Bank Charges,0.6,False
+Dataset 2 — Ambiguous,44,CASH DEPOSIT,500.0,Revenue,Other,False,Transfers,0.6,False
+Dataset 2 — Ambiguous,45,CASH SALE,250.0,Revenue,Other,False,Revenue,0.95,True
+Dataset 2 — Ambiguous,46,MISC INCOME,1200.0,Revenue,Other,False,Revenue,0.85,True
+Dataset 2 — Ambiguous,47,BUSINESS EXPENSES,-89.0,Operating Expenses,Other,False,Operating Expenses,0.45,True
+Dataset 2 — Ambiguous,48,MISCELLANEOUS,-45.0,Other,Other,True,Other,0.4,True
+Dataset 2 — Ambiguous,49,GENERAL EXPENSES,-120.0,Operating Expenses,Other,False,Operating Expenses,0.45,True
+Dataset 2 — Ambiguous,50,OFFICE COSTS,-230.0,Operating Expenses,Other,False,Operating Expenses,0.72,True
+Dataset 2 — Ambiguous,51,AMAZON WEB SERVICES,-89.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.93,True
+Dataset 2 — Ambiguous,52,AWS EMEA,-45.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.95,True
+Dataset 2 — Ambiguous,53,AMZN MKTP,-34.99,Supplies,Other,False,Supplies,0.72,True
+Dataset 2 — Ambiguous,54,AMZN DIGITAL,-9.99,Software & Subscriptions,Other,False,Software & Subscriptions,0.87,True
+Dataset 2 — Ambiguous,55,ITUNES,-4.99,Software & Subscriptions,Other,False,Software & Subscriptions,0.85,True
+Dataset 2 — Ambiguous,56,ITUNES,-12.99,Software & Subscriptions,Other,False,Software & Subscriptions,0.85,True
+Dataset 2 — Ambiguous,57,SPOTIFY,-9.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.95,True
+Dataset 2 — Ambiguous,58,NETFLIX,-15.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.91,True
+Dataset 2 — Ambiguous,59,TOOLS,-89.0,Supplies,Other,False,Supplies,0.82,True
+Dataset 2 — Ambiguous,60,EQUIPMENT,-450.0,Supplies,Other,False,Supplies,0.72,True
+Dataset 2 — Ambiguous,61,MATERIALS,-230.0,Supplies,Other,False,Supplies,0.85,True
+Dataset 2 — Ambiguous,62,PARTS,-120.0,Supplies,Other,False,Supplies,0.82,True
+Dataset 2 — Ambiguous,63,WORKSHOP,-300.0,Operating Expenses,Other,False,Operating Expenses,0.45,True
+Dataset 2 — Ambiguous,64,TRAINING,-500.0,Professional Fees,Other,False,Operating Expenses,0.72,False
+Dataset 2 — Ambiguous,65,COURSE FEE,-250.0,Professional Fees,Other,False,Operating Expenses,0.72,False
+Dataset 2 — Ambiguous,66,CONFERENCE,-350.0,Professional Fees,Other,False,Travel & Transport,0.62,False
+Dataset 2 — Ambiguous,67,HOTEL,-189.0,Travel & Transport,Other,False,Travel & Transport,0.91,True
+Dataset 2 — Ambiguous,68,FLIGHTS,-245.0,Travel & Transport,Other,False,Travel & Transport,0.95,True
+Dataset 2 — Ambiguous,69,CAR HIRE,-178.0,Travel & Transport,Other,False,Travel & Transport,0.95,True
+Dataset 2 — Ambiguous,70,PARKING,-45.0,Travel & Transport,Other,False,Travel & Transport,0.92,True
+Dataset 2 — Ambiguous,71,CONSULTING FEE,-800.0,Professional Fees,Other,False,Professional Fees,0.95,True
+Dataset 2 — Ambiguous,72,RETAINER FEE,-1500.0,Professional Fees,Other,False,Professional Fees,0.85,True
+Dataset 2 — Ambiguous,73,SERVICE FEE,-600.0,Professional Fees,Other,False,Professional Fees,0.55,True
+Dataset 2 — Ambiguous,74,PROJECT COST,-2000.0,Operating Expenses,Other,False,Operating Expenses,0.45,True
+Dataset 2 — Ambiguous,75,MONTHLY FEE,-150.0,Software & Subscriptions,Other,False,Bank Charges,0.6,False
+Dataset 2 — Ambiguous,76,ANNUAL FEE,-500.0,Software & Subscriptions,Other,False,Bank Charges,0.72,False
+Dataset 2 — Ambiguous,77,MEMBERSHIP,-120.0,Professional Fees,Other,False,Operating Expenses,0.6,False
+Dataset 2 — Ambiguous,78,SUBSCRIPTION,-45.0,Software & Subscriptions,Other,False,Software & Subscriptions,0.85,True
+Dataset 2 — Ambiguous,79,PAYMENT TO SUPPLIER,-890.0,Supplies,Other,False,Supplies,0.45,True
+Dataset 2 — Ambiguous,80,SUPPLIER PAYMENT,-1200.0,Supplies,Other,False,Operating Expenses,0.45,False
+Dataset 2 — Ambiguous,81,TRANSFER,-500.0,Transfers,Other,False,Transfers,0.85,True
+Dataset 2 — Ambiguous,82,PAYMENT,-300.0,Other,Other,True,Other,0.3,True
+Dataset 2 — Ambiguous,83,DEPOSIT,1000.0,Revenue,Other,False,Transfers,0.5,False
+Dataset 2 — Ambiguous,84,ADVANCE PAYMENT,2000.0,Revenue,Other,False,Transfers,0.4,False
+Dataset 2 — Ambiguous,85,REFUND,150.0,Revenue,Other,False,Other,0.45,False
+Dataset 2 — Ambiguous,86,CREDIT,-50.0,Other,Other,True,Transfers,0.4,False
+Dataset 2 — Ambiguous,87,WAGES,-2400.0,Payroll,Payroll,True,Payroll,0.99,True
+Dataset 2 — Ambiguous,88,SALARY,-2800.0,Payroll,Other,False,Payroll,0.97,True
+Dataset 2 — Ambiguous,89,BONUS,-500.0,Payroll,Other,False,Payroll,0.85,True
+Dataset 2 — Ambiguous,90,COMMISSION,-350.0,Revenue,Other,False,Operating Expenses,0.6,False
+Dataset 2 — Ambiguous,91,MARKETING,-500.0,Marketing & Advertising,Other,False,Marketing & Advertising,0.95,True
+Dataset 2 — Ambiguous,92,ADVERTISING,-300.0,Marketing & Advertising,Other,False,Marketing & Advertising,0.95,True
+Dataset 2 — Ambiguous,93,PR COSTS,-450.0,Marketing & Advertising,Other,False,Marketing & Advertising,0.85,True
+Dataset 2 — Ambiguous,94,SOCIAL MEDIA,-200.0,Marketing & Advertising,Other,False,Marketing & Advertising,0.9,True
+Dataset 2 — Ambiguous,95,INSURANCE,-89.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.85,True
+Dataset 2 — Ambiguous,96,RENT,-1200.0,Operating Expenses,Other,False,Operating Expenses,0.95,True
+Dataset 2 — Ambiguous,97,RATES,-340.0,Operating Expenses,Other,False,Operating Expenses,0.92,True
+Dataset 2 — Ambiguous,98,UTILITIES,-180.0,Utilities,Other,False,Utilities,0.99,True
+Dataset 2 — Ambiguous,99,MAINTENANCE,-250.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.72,True
+Dataset 2 — Ambiguous,100,REPAIRS,-180.0,Operating Expenses,Other,False,Operating Expenses,0.85,True
+Dataset 3 — Mixed Sole Trader,1,CLIENT PAYMENT REF 101,2500.0,Revenue,Revenue,True,Revenue,0.95,True
+Dataset 3 — Mixed Sole Trader,2,FREELANCE INVOICE 004,1800.0,Revenue,Other,False,Professional Fees,0.88,False
+Dataset 3 — Mixed Sole Trader,3,PROJECT PAYMENT ALPHA,3200.0,Revenue,Revenue,True,Revenue,0.82,True
+Dataset 3 — Mixed Sole Trader,4,BACS RECEIPT BETA CO,1500.0,Revenue,Revenue,True,Revenue,0.92,True
+Dataset 3 — Mixed Sole Trader,5,CLIENT RETAINER FEB,2000.0,Revenue,Other,False,Revenue,0.95,True
+Dataset 3 — Mixed Sole Trader,6,HMRC SELF ASSESSMENT,-1200.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.85,True
+Dataset 3 — Mixed Sole Trader,7,HMRC VAT Q1,-890.0,VAT Payment,VAT Payment,True,VAT Payment,0.99,True
+Dataset 3 — Mixed Sole Trader,8,HMRC PAYE PERSONAL,-450.0,Payroll,Payroll,True,Payroll,0.92,True
+Dataset 3 — Mixed Sole Trader,9,TESCO METRO LONDON,-45.5,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 3 — Mixed Sole Trader,10,SAINSBURYS LOCAL,-34.2,Supplies,Supplies,True,Supplies,0.6,True
+Dataset 3 — Mixed Sole Trader,11,ASDA SUPERSTORE,-89.0,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 3 — Mixed Sole Trader,12,MORRISONS DAILY,-23.5,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 3 — Mixed Sole Trader,13,ALDI STORES,-28.9,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 3 — Mixed Sole Trader,14,WAITROSE PARTNER,-67.0,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 3 — Mixed Sole Trader,15,MARKS AND SPENCER,-45.0,Supplies,Supplies,True,Personal / Drawings,0.72,False
+Dataset 3 — Mixed Sole Trader,16,ADOBE CREATIVE CLOUD,-54.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 3 — Mixed Sole Trader,17,MICROSOFT 365,-9.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 3 — Mixed Sole Trader,18,ZOOM MONTHLY,-15.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 3 — Mixed Sole Trader,19,NOTION PERSONAL,-5.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.91,True
+Dataset 3 — Mixed Sole Trader,20,SPOTIFY PREMIUM,-9.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.95,True
+Dataset 3 — Mixed Sole Trader,21,NETFLIX,-15.99,Personal / Drawings,Software & Subscriptions,False,Software & Subscriptions,0.91,False
+Dataset 3 — Mixed Sole Trader,22,AMAZON PRIME,-8.99,Personal / Drawings,Software & Subscriptions,False,Software & Subscriptions,0.87,False
+Dataset 3 — Mixed Sole Trader,23,APPLE.COM/BILL,-14.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.92,True
+Dataset 3 — Mixed Sole Trader,24,UBER BUSINESS,-28.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.95,True
+Dataset 3 — Mixed Sole Trader,25,TRAINLINE,-45.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.97,True
+Dataset 3 — Mixed Sole Trader,26,TFL TRAVEL,-34.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.99,True
+Dataset 3 — Mixed Sole Trader,27,UBER EATS,-23.5,Personal / Drawings,Travel & Transport,False,Travel & Transport,0.55,False
+Dataset 3 — Mixed Sole Trader,28,DELIVEROO,-18.0,Personal / Drawings,Other,False,Travel & Transport,0.45,False
+Dataset 3 — Mixed Sole Trader,29,JUST EAT,-15.0,Personal / Drawings,Other,False,Operating Expenses,0.72,False
+Dataset 3 — Mixed Sole Trader,30,COSTA COFFEE,-4.5,Personal / Drawings,Other,False,Travel & Transport,0.72,False
+Dataset 3 — Mixed Sole Trader,31,STARBUCKS,-5.2,Personal / Drawings,Other,False,Travel & Transport,0.72,False
+Dataset 3 — Mixed Sole Trader,32,PRET A MANGER,-6.8,Personal / Drawings,Other,False,Travel & Transport,0.72,False
+Dataset 3 — Mixed Sole Trader,33,BRITISH GAS,-98.0,Utilities,Utilities,True,Utilities,0.97,True
+Dataset 3 — Mixed Sole Trader,34,EDF ENERGY,-67.0,Utilities,Utilities,True,Utilities,0.99,True
+Dataset 3 — Mixed Sole Trader,35,BT BROADBAND,-45.0,Utilities,Other,False,Utilities,0.95,True
+Dataset 3 — Mixed Sole Trader,36,O2 MOBILE,-35.0,Utilities,Other,False,Utilities,0.85,True
+Dataset 3 — Mixed Sole Trader,37,THAMES WATER,-34.0,Utilities,Utilities,True,Utilities,0.99,True
+Dataset 3 — Mixed Sole Trader,38,ATM WITHDRAWAL,-200.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.82,True
+Dataset 3 — Mixed Sole Trader,39,CASH MACHINE,-150.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.72,True
+Dataset 3 — Mixed Sole Trader,40,CASH WITHDRAWAL,-100.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.72,True
+Dataset 3 — Mixed Sole Trader,41,GOOGLE ADS,-150.0,Marketing & Advertising,Marketing & Advertising,True,Marketing & Advertising,0.99,True
+Dataset 3 — Mixed Sole Trader,42,FACEBOOK ADS,-200.0,Marketing & Advertising,Marketing & Advertising,True,Marketing & Advertising,0.99,True
+Dataset 3 — Mixed Sole Trader,43,MAILCHIMP,-25.0,Marketing & Advertising,Software & Subscriptions,False,Software & Subscriptions,0.97,False
+Dataset 3 — Mixed Sole Trader,44,FIVERR MARKETPLACE,-180.0,Professional Fees,Professional Fees,True,Marketing & Advertising,0.82,False
+Dataset 3 — Mixed Sole Trader,45,UPWORK HOURLY,-250.0,Professional Fees,Professional Fees,True,Professional Fees,0.92,True
+Dataset 3 — Mixed Sole Trader,46,COMPANIES HOUSE,-13.0,Professional Fees,Professional Fees,True,Professional Fees,0.85,True
+Dataset 3 — Mixed Sole Trader,47,ROYAL MAIL,-18.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.82,True
+Dataset 3 — Mixed Sole Trader,48,DHL COURIER,-24.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.82,True
+Dataset 3 — Mixed Sole Trader,49,SIMPLY BUSINESS,-67.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.92,True
+Dataset 3 — Mixed Sole Trader,50,BARCLAYS BANK CHARGE,-8.0,Bank Charges,Bank Charges,True,Bank Charges,0.99,True
+Dataset 3 — Mixed Sole Trader,51,CLIENT PAYMENT REF 102,3500.0,Revenue,Revenue,True,Revenue,0.97,True
+Dataset 3 — Mixed Sole Trader,52,BACS RECEIPT GAMMA LTD,2100.0,Revenue,Revenue,True,Revenue,0.92,True
+Dataset 3 — Mixed Sole Trader,53,AMAZON MARKETPLACE,-67.0,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 3 — Mixed Sole Trader,54,STAPLES OFFICE,-89.0,Supplies,Supplies,True,Supplies,0.92,True
+Dataset 3 — Mixed Sole Trader,55,IKEA STORE,-145.0,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 3 — Mixed Sole Trader,56,RYMAN STATIONERY,-23.0,Supplies,Supplies,True,Supplies,0.95,True
+Dataset 3 — Mixed Sole Trader,57,PREMIER INN,-120.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.95,True
+Dataset 3 — Mixed Sole Trader,58,NATIONAL RAIL,-78.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.97,True
+Dataset 3 — Mixed Sole Trader,59,EASYJET,-189.0,Travel & Transport,Travel & Transport,True,Travel & Transport,0.95,True
+Dataset 3 — Mixed Sole Trader,60,HOTEL BOOKING,-234.0,Travel & Transport,Other,False,Travel & Transport,0.92,True
+Dataset 3 — Mixed Sole Trader,61,SLACK MONTHLY,-8.75,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 3 — Mixed Sole Trader,62,GITHUB,-4.0,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.97,True
+Dataset 3 — Mixed Sole Trader,63,DROPBOX,-11.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 3 — Mixed Sole Trader,64,CANVA PRO,-12.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.99,True
+Dataset 3 — Mixed Sole Trader,65,LINKEDIN PREMIUM,-39.99,Software & Subscriptions,Software & Subscriptions,True,Software & Subscriptions,0.92,True
+Dataset 3 — Mixed Sole Trader,66,FASTER PAYMENT TO JAMES,-500.0,Transfers,Transfers,True,Personal / Drawings,0.72,False
+Dataset 3 — Mixed Sole Trader,67,BACS TRANSFER SAVINGS,-1000.0,Transfers,Transfers,True,Transfers,0.92,True
+Dataset 3 — Mixed Sole Trader,68,TRANSFER TO JOINT ACC,-800.0,Personal / Drawings,Transfers,False,Transfers,0.95,False
+Dataset 3 — Mixed Sole Trader,69,PERSONAL TRANSFER,-300.0,Personal / Drawings,Personal / Drawings,True,Personal / Drawings,0.95,True
+Dataset 3 — Mixed Sole Trader,70,HMRC PAYE,-600.0,Payroll,Payroll,True,Payroll,0.95,True
+Dataset 3 — Mixed Sole Trader,71,WAGES PAYMENT,-1800.0,Payroll,Payroll,True,Payroll,0.99,True
+Dataset 3 — Mixed Sole Trader,72,SALARY JANE,-2200.0,Payroll,Other,False,Payroll,0.99,True
+Dataset 3 — Mixed Sole Trader,73,JOHN SMITH CONSULTING,-400.0,Professional Fees,Other,False,Professional Fees,0.91,True
+Dataset 3 — Mixed Sole Trader,74,SARAH JONES DESIGN,-650.0,Professional Fees,Other,False,Professional Fees,0.85,True
+Dataset 3 — Mixed Sole Trader,75,CLIENT PAYMENT REF 103,1900.0,Revenue,Revenue,True,Revenue,0.97,True
+Dataset 3 — Mixed Sole Trader,76,FREELANCE INCOME,2800.0,Revenue,Other,False,Revenue,0.97,True
+Dataset 3 — Mixed Sole Trader,77,AMAZON,-45.0,Supplies,Supplies,True,Supplies,0.72,True
+Dataset 3 — Mixed Sole Trader,78,AMAZON,-12.99,Software & Subscriptions,Supplies,False,Supplies,0.55,False
+Dataset 3 — Mixed Sole Trader,79,PAYPAL PAYMENT,-89.0,Supplies,Other,False,Operating Expenses,0.45,False
+Dataset 3 — Mixed Sole Trader,80,STRIPE RECEIPT,450.0,Revenue,Other,False,Revenue,0.92,True
+Dataset 3 — Mixed Sole Trader,81,SUMUP *CAFE,-8.5,Personal / Drawings,Other,False,Travel & Transport,0.55,False
+Dataset 3 — Mixed Sole Trader,82,SUMUP *OFFICE SUPPLIES,-34.0,Supplies,Other,False,Supplies,0.95,True
+Dataset 3 — Mixed Sole Trader,83,UNKNOWN MERCHANT,-67.0,Other,Other,True,Other,0.4,True
+Dataset 3 — Mixed Sole Trader,84,MISC PAYMENT,-45.0,Other,Other,True,Other,0.4,True
+Dataset 3 — Mixed Sole Trader,85,REF 774421,1200.0,Revenue,Other,False,Other,0.4,False
+Dataset 3 — Mixed Sole Trader,86,BACS 334891,800.0,Revenue,Other,False,Transfers,0.4,False
+Dataset 3 — Mixed Sole Trader,87,VODAFONE BUSINESS,-45.0,Utilities,Utilities,True,Utilities,0.85,True
+Dataset 3 — Mixed Sole Trader,88,VIRGIN MEDIA,-39.99,Utilities,Utilities,True,Utilities,0.85,True
+Dataset 3 — Mixed Sole Trader,89,HISCOX INSURANCE,-89.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.95,True
+Dataset 3 — Mixed Sole Trader,90,MAINTENANCE COST,-120.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.82,True
+Dataset 3 — Mixed Sole Trader,91,EVRI COURIER,-8.5,Operating Expenses,Operating Expenses,True,Operating Expenses,0.82,True
+Dataset 3 — Mixed Sole Trader,92,PARCELFORCE,-14.0,Operating Expenses,Operating Expenses,True,Operating Expenses,0.82,True
+Dataset 3 — Mixed Sole Trader,93,DIVIDEND PAYMENT,2000.0,Revenue,Personal / Drawings,False,Personal / Drawings,0.82,False
+Dataset 3 — Mixed Sole Trader,94,INTEREST RECEIVED,45.0,Revenue,Other,False,Revenue,0.92,True
+Dataset 3 — Mixed Sole Trader,95,REFUND AMAZON,34.99,Revenue,Supplies,False,Supplies,0.72,False
+Dataset 3 — Mixed Sole Trader,96,CASHBACK REWARD,25.0,Revenue,Other,False,Bank Charges,0.72,False
+Dataset 3 — Mixed Sole Trader,97,PERSONAL LOAN REPAYMENT,-350.0,Personal / Drawings,Other,False,Personal / Drawings,0.82,True
+Dataset 3 — Mixed Sole Trader,98,COUNCIL TAX,-145.0,Personal / Drawings,Other,False,Utilities,0.72,False
+Dataset 3 — Mixed Sole Trader,99,MORTGAGE PAYMENT,-1200.0,Personal / Drawings,Other,False,Personal / Drawings,0.72,True
+Dataset 3 — Mixed Sole Trader,100,LIFE INSURANCE,-45.0,Personal / Drawings,Operating Expenses,False,Operating Expenses,0.72,False

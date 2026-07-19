@@ -1,0 +1,101 @@
+id,description,amount,true_category
+1,AMAZON,-34.99,Supplies
+2,AMAZON,-89.00,Supplies
+3,AMAZON,-299.00,Supplies
+4,JOHN SMITH,-500.00,Professional Fees
+5,JOHN SMITH,-1200.00,Professional Fees
+6,SARAH JONES,-350.00,Professional Fees
+7,SUMUP *COFFEE SHOP,-12.50,Supplies
+8,SUMUP *HAIR SALON,-45.00,Operating Expenses
+9,SUMUP *PLUMBER,-180.00,Operating Expenses
+10,PAYPAL *SUPPLIES,-67.00,Supplies
+11,PAYPAL *SOFTWARE,-29.99,Software & Subscriptions
+12,PAYPAL *CONSULTANT,-450.00,Professional Fees
+13,STRIPE PAYMENT,-89.00,Supplies
+14,GOFARDLESS *SUBSCRIPTION,-45.00,Software & Subscriptions
+15,REF 884721,2000.00,Revenue
+16,REF 992341,500.00,Revenue
+17,BACS 334421,1500.00,Revenue
+18,TFR FROM JAMES,-800.00,Transfers
+19,TFR TO SARAH,-600.00,Transfers
+20,REVOLUT *PAYMENT,-200.00,Transfers
+21,DELIVEROO,-45.00,Operating Expenses
+22,DELIVEROO FOR BUSINESS,-67.00,Operating Expenses
+23,UBER EATS,-34.00,Operating Expenses
+24,JUST EAT,-28.00,Operating Expenses
+25,APPLE.COM/BILL,-9.99,Software & Subscriptions
+26,APPLE.COM/BILL,-14.99,Software & Subscriptions
+27,GOOGLE *SERVICES,-12.00,Software & Subscriptions
+28,GOOGLE *STORAGE,-2.99,Software & Subscriptions
+29,FACEBOOK,-50.00,Marketing & Advertising
+30,FACEBOOK,-200.00,Marketing & Advertising
+31,LINKEDIN,-39.99,Software & Subscriptions
+32,LINKEDIN,-500.00,Marketing & Advertising
+33,MIKE JOHNSON,-750.00,Professional Fees
+34,EMMA WILLIAMS,-400.00,Professional Fees
+35,D PATEL,-1000.00,Payroll
+36,A KUMAR,-850.00,Payroll
+37,UNKNOWN MERCHANT 2847,-1200.00,Other
+38,UNKNOWN REF 4421,-450.00,Other
+39,POS PAYMENT 334,-67.00,Supplies
+40,CARD PAYMENT 119,-34.00,Supplies
+41,MONZO,-3.63,Transfers
+42,STARLING BANK,-50.00,Transfers
+43,BARCLAYS,-200.00,Transfers
+44,CASH DEPOSIT,500.00,Revenue
+45,CASH SALE,250.00,Revenue
+46,MISC INCOME,1200.00,Revenue
+47,BUSINESS EXPENSES,-89.00,Operating Expenses
+48,MISCELLANEOUS,-45.00,Other
+49,GENERAL EXPENSES,-120.00,Operating Expenses
+50,OFFICE COSTS,-230.00,Operating Expenses
+51,AMAZON WEB SERVICES,-89.00,Software & Subscriptions
+52,AWS EMEA,-45.00,Software & Subscriptions
+53,AMZN MKTP,-34.99,Supplies
+54,AMZN DIGITAL,-9.99,Software & Subscriptions
+55,ITUNES,-4.99,Software & Subscriptions
+56,ITUNES,-12.99,Software & Subscriptions
+57,SPOTIFY,-9.99,Software & Subscriptions
+58,NETFLIX,-15.99,Software & Subscriptions
+59,TOOLS,-89.00,Supplies
+60,EQUIPMENT,-450.00,Supplies
+61,MATERIALS,-230.00,Supplies
+62,PARTS,-120.00,Supplies
+63,WORKSHOP,-300.00,Operating Expenses
+64,TRAINING,-500.00,Professional Fees
+65,COURSE FEE,-250.00,Professional Fees
+66,CONFERENCE,-350.00,Professional Fees
+67,HOTEL,-189.00,Travel & Transport
+68,FLIGHTS,-245.00,Travel & Transport
+69,CAR HIRE,-178.00,Travel & Transport
+70,PARKING,-45.00,Travel & Transport
+71,CONSULTING FEE,-800.00,Professional Fees
+72,RETAINER FEE,-1500.00,Professional Fees
+73,SERVICE FEE,-600.00,Professional Fees
+74,PROJECT COST,-2000.00,Operating Expenses
+75,MONTHLY FEE,-150.00,Software & Subscriptions
+76,ANNUAL FEE,-500.00,Software & Subscriptions
+77,MEMBERSHIP,-120.00,Professional Fees
+78,SUBSCRIPTION,-45.00,Software & Subscriptions
+79,PAYMENT TO SUPPLIER,-890.00,Supplies
+80,SUPPLIER PAYMENT,-1200.00,Supplies
+81,TRANSFER,-500.00,Transfers
+82,PAYMENT,-300.00,Other
+83,DEPOSIT,1000.00,Revenue
+84,ADVANCE PAYMENT,2000.00,Revenue
+85,REFUND,150.00,Revenue
+86,CREDIT,-50.00,Other
+87,WAGES,-2400.00,Payroll
+88,SALARY,-2800.00,Payroll
+89,BONUS,-500.00,Payroll
+90,COMMISSION,-350.00,Revenue
+91,MARKETING,-500.00,Marketing & Advertising
+92,ADVERTISING,-300.00,Marketing & Advertising
+93,PR COSTS,-450.00,Marketing & Advertising
+94,SOCIAL MEDIA,-200.00,Marketing & Advertising
+95,INSURANCE,-89.00,Operating Expenses
+96,RENT,-1200.00,Operating Expenses
+97,RATES,-340.00,Operating Expenses
+98,UTILITIES,-180.00,Utilities
+99,MAINTENANCE,-250.00,Operating Expenses
+100,REPAIRS,-180.00,Operating Expenses

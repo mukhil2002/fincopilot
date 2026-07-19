@@ -1,0 +1,101 @@
+id,description,amount,true_category
+1,CLIENT PAYMENT REF 101,2500.00,Revenue
+2,FREELANCE INVOICE 004,1800.00,Revenue
+3,PROJECT PAYMENT ALPHA,3200.00,Revenue
+4,BACS RECEIPT BETA CO,1500.00,Revenue
+5,CLIENT RETAINER FEB,2000.00,Revenue
+6,HMRC SELF ASSESSMENT,-1200.00,Personal / Drawings
+7,HMRC VAT Q1,-890.00,VAT Payment
+8,HMRC PAYE PERSONAL,-450.00,Payroll
+9,TESCO METRO LONDON,-45.50,Supplies
+10,SAINSBURYS LOCAL,-34.20,Supplies
+11,ASDA SUPERSTORE,-89.00,Supplies
+12,MORRISONS DAILY,-23.50,Supplies
+13,ALDI STORES,-28.90,Supplies
+14,WAITROSE PARTNER,-67.00,Supplies
+15,MARKS AND SPENCER,-45.00,Supplies
+16,ADOBE CREATIVE CLOUD,-54.99,Software & Subscriptions
+17,MICROSOFT 365,-9.99,Software & Subscriptions
+18,ZOOM MONTHLY,-15.99,Software & Subscriptions
+19,NOTION PERSONAL,-5.00,Software & Subscriptions
+20,SPOTIFY PREMIUM,-9.99,Software & Subscriptions
+21,NETFLIX,-15.99,Personal / Drawings
+22,AMAZON PRIME,-8.99,Personal / Drawings
+23,APPLE.COM/BILL,-14.99,Software & Subscriptions
+24,UBER BUSINESS,-28.00,Travel & Transport
+25,TRAINLINE,-45.00,Travel & Transport
+26,TFL TRAVEL,-34.00,Travel & Transport
+27,UBER EATS,-23.50,Personal / Drawings
+28,DELIVEROO,-18.00,Personal / Drawings
+29,JUST EAT,-15.00,Personal / Drawings
+30,COSTA COFFEE,-4.50,Personal / Drawings
+31,STARBUCKS,-5.20,Personal / Drawings
+32,PRET A MANGER,-6.80,Personal / Drawings
+33,BRITISH GAS,-98.00,Utilities
+34,EDF ENERGY,-67.00,Utilities
+35,BT BROADBAND,-45.00,Utilities
+36,O2 MOBILE,-35.00,Utilities
+37,THAMES WATER,-34.00,Utilities
+38,ATM WITHDRAWAL,-200.00,Personal / Drawings
+39,CASH MACHINE,-150.00,Personal / Drawings
+40,CASH WITHDRAWAL,-100.00,Personal / Drawings
+41,GOOGLE ADS,-150.00,Marketing & Advertising
+42,FACEBOOK ADS,-200.00,Marketing & Advertising
+43,MAILCHIMP,-25.00,Marketing & Advertising
+44,FIVERR MARKETPLACE,-180.00,Professional Fees
+45,UPWORK HOURLY,-250.00,Professional Fees
+46,COMPANIES HOUSE,-13.00,Professional Fees
+47,ROYAL MAIL,-18.00,Operating Expenses
+48,DHL COURIER,-24.00,Operating Expenses
+49,SIMPLY BUSINESS,-67.00,Operating Expenses
+50,BARCLAYS BANK CHARGE,-8.00,Bank Charges
+51,CLIENT PAYMENT REF 102,3500.00,Revenue
+52,BACS RECEIPT GAMMA LTD,2100.00,Revenue
+53,AMAZON MARKETPLACE,-67.00,Supplies
+54,STAPLES OFFICE,-89.00,Supplies
+55,IKEA STORE,-145.00,Supplies
+56,RYMAN STATIONERY,-23.00,Supplies
+57,PREMIER INN,-120.00,Travel & Transport
+58,NATIONAL RAIL,-78.00,Travel & Transport
+59,EASYJET,-189.00,Travel & Transport
+60,HOTEL BOOKING,-234.00,Travel & Transport
+61,SLACK MONTHLY,-8.75,Software & Subscriptions
+62,GITHUB,-4.00,Software & Subscriptions
+63,DROPBOX,-11.99,Software & Subscriptions
+64,CANVA PRO,-12.99,Software & Subscriptions
+65,LINKEDIN PREMIUM,-39.99,Software & Subscriptions
+66,FASTER PAYMENT TO JAMES,-500.00,Transfers
+67,BACS TRANSFER SAVINGS,-1000.00,Transfers
+68,TRANSFER TO JOINT ACC,-800.00,Personal / Drawings
+69,PERSONAL TRANSFER,-300.00,Personal / Drawings
+70,HMRC PAYE,-600.00,Payroll
+71,WAGES PAYMENT,-1800.00,Payroll
+72,SALARY JANE,-2200.00,Payroll
+73,JOHN SMITH CONSULTING,-400.00,Professional Fees
+74,SARAH JONES DESIGN,-650.00,Professional Fees
+75,CLIENT PAYMENT REF 103,1900.00,Revenue
+76,FREELANCE INCOME,2800.00,Revenue
+77,AMAZON,-45.00,Supplies
+78,AMAZON,-12.99,Software & Subscriptions
+79,PAYPAL PAYMENT,-89.00,Supplies
+80,STRIPE RECEIPT,450.00,Revenue
+81,SUMUP *CAFE,-8.50,Personal / Drawings
+82,SUMUP *OFFICE SUPPLIES,-34.00,Supplies
+83,UNKNOWN MERCHANT,-67.00,Other
+84,MISC PAYMENT,-45.00,Other
+85,REF 774421,1200.00,Revenue
+86,BACS 334891,800.00,Revenue
+87,VODAFONE BUSINESS,-45.00,Utilities
+88,VIRGIN MEDIA,-39.99,Utilities
+89,HISCOX INSURANCE,-89.00,Operating Expenses
+90,MAINTENANCE COST,-120.00,Operating Expenses
+91,EVRI COURIER,-8.50,Operating Expenses
+92,PARCELFORCE,-14.00,Operating Expenses
+93,DIVIDEND PAYMENT,2000.00,Revenue
+94,INTEREST RECEIVED,45.00,Revenue
+95,REFUND AMAZON,34.99,Revenue
+96,CASHBACK REWARD,25.00,Revenue
+97,PERSONAL LOAN REPAYMENT,-350.00,Personal / Drawings
+98,COUNCIL TAX,-145.00,Personal / Drawings
+99,MORTGAGE PAYMENT,-1200.00,Personal / Drawings
+100,LIFE INSURANCE,-45.00,Personal / Drawings

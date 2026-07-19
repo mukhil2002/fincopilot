@@ -1,0 +1,4 @@
+dataset,total,rule_correct,rule_accuracy,claude_correct,claude_accuracy,difference
+Dataset 1 — Clean Business,100,88,88.0%,96,96.0%,+8.0%
+Dataset 2 — Ambiguous,100,19,19.0%,66,66.0%,+47.0%
+Dataset 3 — Mixed Sole Trader,100,66,66.0%,76,76.0%,+10.0%
