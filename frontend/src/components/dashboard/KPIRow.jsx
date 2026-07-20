@@ -76,11 +76,8 @@ export default function KPIRow({ selectedMonth, refreshKey }) {
         // The api instance automatically attaches the JWT token (from api.js)
         const response = await api.get('/transactions', {
           params: {
-            // Send selectedMonth as a query parameter so backend can filter
-            // e.g. /api/transactions?month=2026-03
-            // If your backend doesn't support month filtering yet,
-            // we filter client-side below — both approaches are handled
-            limit: 500, // fetch up to 500 transactions
+            month: selectedMonth,
+            per_page: 200,
           }
         })
 
@@ -108,11 +105,7 @@ export default function KPIRow({ selectedMonth, refreshKey }) {
   // This runs every render but only after transactions are loaded.
   // We filter to the selected month first, then sum.
   
-  const filtered = (transactions || []).filter(txn => {
-    if (!selectedMonth) return true
-    // txn.txn_date is "2026-03-14" — we take the first 7 chars "2026-03"
-    return txn.txn_date?.startsWith(selectedMonth)
-  })
+  const filtered = transactions || []
 
   // Revenue = sum of all POSITIVE amounts (money coming in)
   const revenue = filtered

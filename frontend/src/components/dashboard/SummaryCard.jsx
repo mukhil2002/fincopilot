@@ -130,11 +130,15 @@ export default function SummaryCard({ selectedMonth, refreshKey }) {
           // leading-[1.75] = line height 1.75 — makes text comfortable to read.
           // whitespace-pre-wrap = respects any newlines Claude puts in the text.
           <p
-            className="text-[12.5px] leading-[1.75] whitespace-pre-wrap"
-            style={{ color: '#4b5563' }}
-          >
-            {summary}
-          </p>
+  className="text-[12.5px] leading-[1.75] whitespace-pre-wrap"
+  style={{ color: '#4b5563' }}
+>
+  {summary
+    .replace(/^##\s+/gm, '')
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .trim()
+  }
+</p>
         )}
 
         {!summary && !loading && !error && (

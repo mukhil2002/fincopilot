@@ -113,7 +113,14 @@ function ChatBubble({ message }) {
             : '3px 14px 14px 14px',
         }}
       >
-        {message.text}
+        {isUser ? message.text : message.text
+  .replace(/^##\s+/gm, '')
+  .replace(/\*\*(.*?)\*\*/g, '$1')
+  .replace(/---/g, '')
+  .replace(/\|/g, ' ')
+  .replace(/^>\s*/gm, '')
+  .trim()
+}
       </div>
     </div>
   )
