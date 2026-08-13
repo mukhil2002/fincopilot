@@ -30,7 +30,9 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",  # React dev server
-        "http://localhost:3000",  # alternate React port
+        "http://localhost:3000",
+        "https://fincopilot.vercel.app",
+        "https://fincopilot-ten.vercel.app",  # alternate React port
     ],
     allow_credentials=True,
     allow_methods=["*"],  # allow GET, POST, PATCH, DELETE etc
