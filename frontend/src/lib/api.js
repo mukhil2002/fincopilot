@@ -3,10 +3,13 @@ import { supabase } from './supabase'
 
 // Create an Axios instance
 // All API calls go through this instead of raw axios
-const api = axios.create({
-  baseURL: '/api',
-})
+const BASE_URL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : '/api'
 
+const api = axios.create({
+  baseURL: BASE_URL,
+})
 // ── Request interceptor ───────────────────────────────────────────
 // Runs BEFORE every request goes out.
 // Automatically attaches the JWT token to the Authorization header.
