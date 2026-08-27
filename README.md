@@ -26,10 +26,10 @@ Upload a bank statement CSV â†’ AI categorises every transaction using Claude â†
 
 | RQ | Question |
 |---|---|
-| RQ1 | Does FinCopilot's plain-English AI output improve financial comprehension for non-accountants? |
+| RQ1 | Does FinCopilot's plain-English AI output improve perceived ease and confidence for non-accountants? |
 | RQ2 | Does zero-shot Claude outperform rule-based categorisation for ambiguous UK SME transactions? |
 | RQ3 | Can Claude categorise accurately from the very first upload with no prior configuration? |
-| RQ4 | Does a Claude-narrated cash flow forecast improve comprehension vs raw numerical projections? |
+| RQ4 | Does a Claude-narrated cash flow forecast improve perceived ease vs raw numerical projections? |
 
 ---
 
