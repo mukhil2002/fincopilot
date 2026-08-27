@@ -83,21 +83,6 @@ Upload a bank statement CSV → AI categorises every transaction using Claude �
 
 
 
-fincopilot/
-├── backend/
-│ ├── api/ ← FastAPI endpoints
-│ ├── services/ ← Business logic (categoriser, parser, anomaly, forecast, report)
-│ └── config.py ← 14 transaction categories, API keys
-├── frontend/
-│ └── src/
-│ ├── pages/ ← Login, Signup, Dashboard
-│ └── components/ ← UI components
-├── scripts/
-│ ├── run_evaluation.py ← RQ2 evaluation script
-│ └── datasets/ ← 3 synthetic datasets for RQ2
-└── results/ ← Evaluation output (timestamped CSVs)
-
-
 ---
 
 ## Key Features
